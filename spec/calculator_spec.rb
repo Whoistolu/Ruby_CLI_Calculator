@@ -6,4 +6,5 @@ RSpec.describe Calculator do
             calc = Calculator.new
             expect(calc.add(2, 3)).to eq(5)
         end
+    end
 end
