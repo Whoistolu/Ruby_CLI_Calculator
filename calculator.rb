@@ -6,4 +6,10 @@ class Calculator
     def subtract(a, b)
         a - b
     end
+
+     def divide(a, b)
+        raise ZeroDivisionError, 'Cannot divide by zero' if b == 0
+
+        a.to_f / b
+    end
 end
