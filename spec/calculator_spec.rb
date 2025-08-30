@@ -42,7 +42,18 @@ RSpec.describe Calculator do
         end
 
         it 'returns the number when divided by 1' do
+            calc = Calculator.new
             expect(calc.divide(4, 1)).to eq(4.0)
+        end
+
+        it 'returns a float when odd divided by even' do
+            calc = Calculator.new
+            expect(calc.divide(7, 20)).to eq(0.35)
+        end
+
+        it 'raises error when dividing by zero' do
+            calc = Calculator.new
+            expect { calc.divide(5, 0) }.to raise_error(ZeroDivisionError)
         end
     end
 end
