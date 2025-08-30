@@ -56,4 +56,21 @@ RSpec.describe Calculator do
             expect { calc.divide(5, 0) }.to raise_error(ZeroDivisionError)
         end
     end
+
+    describe '#multiply' do
+        it 'returns the product of two numbers' do
+            calc = Calculator.new
+            expect(calc.multiply(25, 4)).to eq(100)
+        end
+
+        it 'returns zero when multiplied by zero' do
+            calc = Calculator.new
+            expect(calc.multiply(8, 0)).to eq(0)
+        end
+
+        it 'returns a negative when multiplied by a negative' do
+            calc = Calculator.new
+            expect(calc.multiply(6, -3)).to eq(-18)
+        end
+    end
 end
