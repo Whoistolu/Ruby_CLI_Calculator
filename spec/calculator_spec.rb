@@ -8,6 +8,7 @@ RSpec.describe Calculator do
         end
 
         it 'adds integer to 0' do
+            calc = Calculator.new
             expect(calc.add(4, 0)).to eq(4)
         end
     end
