@@ -1,5 +1,9 @@
 class Calculator
     def add(a, b)
-    a + b
-  end
+        a + b
+    end
+
+    def subtract(a, b)
+        a - b
+    end
 end
