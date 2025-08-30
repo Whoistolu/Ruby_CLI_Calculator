@@ -1,7 +1,7 @@
 require_relative '../calculator'
 
 RSpec.describe Calculator do
-    let(:calc) { Calculator.new }
+  let(:calc) { Calculator.new }
 
   describe '#add' do
     it 'adds two integers correctly' do
