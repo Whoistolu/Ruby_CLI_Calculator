@@ -11,5 +11,10 @@ RSpec.describe Calculator do
             calc = Calculator.new
             expect(calc.add(4, 0)).to eq(4)
         end
+
+        it 'returns the sum of two negative numbers' do
+            calc = Calculator.new
+            expect(calc.add(-6, -8)).to eq(-14)
+        end
     end
 end
