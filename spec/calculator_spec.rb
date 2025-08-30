@@ -40,5 +40,9 @@ RSpec.describe Calculator do
             calc = Calculator.new
             expect(calc.divide(20, 4)).to eq(5.0)
         end
-  end
+
+        it 'returns the number when divided by 1' do
+            expect(calc.divide(4, 1)).to eq(4.0)
+        end
+    end
 end
