@@ -20,7 +20,13 @@ RSpec.describe Calculator do
 
     describe '#subtract' do
         it 'returns the difference of two numbers' do
+            calc = Calculator.new
             expect(calc.subtract(6, 3)).to eq(3)
         end
-  end
+
+        it 'returns zero when subtracting the same number' do
+             calc = Calculator.new
+            expect(calc.subtract(5, 5)).to eq(0)
+        end
+    end
 end
