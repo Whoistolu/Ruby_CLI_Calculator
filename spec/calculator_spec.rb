@@ -28,5 +28,17 @@ RSpec.describe Calculator do
              calc = Calculator.new
             expect(calc.subtract(5, 5)).to eq(0)
         end
+
+        it 'returns a negative when smaller minus bigger' do
+             calc = Calculator.new
+            expect(calc.subtract(2, 8)).to eq(-6)
+        end
     end
+
+    describe '#divide' do
+        it 'returns the quotient of two numbers' do
+            calc = Calculator.new
+            expect(calc.divide(20, 4)).to eq(5.0)
+        end
+  end
 end
