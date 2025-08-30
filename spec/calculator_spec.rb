@@ -17,4 +17,10 @@ RSpec.describe Calculator do
             expect(calc.add(-6, -8)).to eq(-14)
         end
     end
+
+    describe '#subtract' do
+        it 'returns the difference of two numbers' do
+            expect(calc.subtract(6, 3)).to eq(3)
+        end
+  end
 end
